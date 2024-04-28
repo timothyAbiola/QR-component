@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        background-color: hsl(220, 15%, 55%);
+      }
+      .qr-code-container {
+        width: fit-content;
+        padding: 20px;
+        border-radius: 15px;
+        height: 490px;
+        text-align: center;
+        background-color: white;
+      }
+      img,
+      .text {
+        width: 280px;
+        height: 300px;
+        text-align: center;
+      }
+      img {
+        border-radius: 10px;
+      }
+      .text{
+        margin: 20px auto;
+        display: flex;
+        padding: 5px;
+        flex-direction: column;
+        gap: 20px;
+      }
+      p{
+        color: rgba(128, 128, 128, 0.859);
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="qr-code-container">
+        <div class="qr-code">
+          <img src="../images/image-qr-code.png" alt="qr-code" />
+        </div>
+        <div class="text">
+          <h2>Imporve your front-end skills by building projects</h2>
+          <p>
+            Scan the QR coe to visiit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
